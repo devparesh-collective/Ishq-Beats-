@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ishq-Beats 🎵</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>      
+<body>
+     <div class="background-overlay"></div>
+
+<header class="navbar">
+    <a href="#home" class="logo">
+        Our Little World <span>♡</span>
+    </a>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about" id="aboutNav">About</a>
+    </nav>
+</header>
+
+   <main class="main-container">
+        <section class="hero" id="home">
+            <p class="hindi-text">
+                सिर्फ तुम्हारे लिए
+            </p>
+            <h1>
+                MY LOVE <span>❤️</span>
+            </h1>
+            <p class="subtitle">
+                In a world full of people,<br>
+                my heart chooses you.
+            </p>
+            <button class="letter-btn" id="letterBtn">
+                <i class="fa-regular fa-envelope"></i>
+                Open My Letter
+            </button>
+        </section>
+
+        <section class="actions">
+            <button id="loveBtn">
+                <i class="fa-solid fa-heart"></i>
+                Love
+            </button>
+            <button id="nightBtn">
+                <i class="fa-solid fa-moon"></i>
+                Night
+            </button>
+            <button id="surpriseBtn">
+                <i class="fa-solid fa-star"></i>
+                Surprise
+            </button>
+        </section>
+
+        <!-- Romantic Music Player -->
+<div class="music-player">
+
+    <!-- Album Image -->
+    <div class="music-cover">
+        <img
+            id="albumCover"
+            src="love-bg.jpeg"
+            alt="Album cover"
+        >
+    </div>
+
+    <!-- Song Information -->
+    <div class="music-info">
+        <h4 id="songTitle">Our Love Playlist ❤️</h4>
+        <p id="artistName">Loading romantic songs...</p>
+
+        <div class="progress-container">
+            <span id="currentTime">0:00</span>
+
+            <input
+                type="range"
+                id="progressBar"
+                min="0"
+                max="100"
+                value="0"
+            >
+
+            <span id="duration">0:00</span>
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <div class="music-controls">
+
+        <button id="shuffleBtn" title="Shuffle">🔀</button>
+
+        <button id="prevBtn" title="Previous song">⏮</button>
+
+        <button id="playBtn" title="Play or pause">▶</button>
+
+        <button id="nextBtn" title="Next random song">⏭</button>
+
+    </div>
+
+    <span id="musicStatus" aria-live="polite"></span>
+
+</div>
+
+
+<audio id="audioPlayer" preload="none"></audio>
+
+
+    </main>
+
+    <div class="modal" id="letterModal">
+        <div class="modal-content">
+            <button class="close-btn" data-close aria-label="Close">
+                &times;
+            </button>
+            <i class="fa-solid fa-envelope-open-text modal-icon"></i>
+            <h2>A Letter For You 💌</h2>
+            <p>
+                My love, ❤️
+                <br><br>
+                You make my ordinary days special.
+                Your smile makes my world brighter,
+                and every moment with you becomes
+                a beautiful memory.
+                <br><br>
+                If I could give you one thing,
+                it would be the ability to see yourself
+                through my eyes. Then you would know
+                how precious you are to me.
+                <br><br>
+                No matter how many beautiful things
+                this world holds, you will always have
+                a special place in my heart.
+                <br><br>
+                Forever yours. ❤️
+            </p>
+            <span class="letter-signature">
+                Made with love, just for you.
+            </span>
+        </div>
+    </div>
+
+
+    <div class="modal" id="infoModal">
+        <div class="modal-content">
+            <button class="close-btn" data-close aria-label="Close">
+                &times;
+            </button>
+            <i class="fa-solid fa-heart modal-icon"></i>
+            <h2 id="infoTitle">Our Memories</h2>
+            <p id="infoText">
+                Every beautiful memory becomes more special because of you.
+            </p>
+        </div>
+    </div>
+
+    <section class="about-section" id="about">
+    <div class="about-content">
+        <span class="about-tag">GET TO KNOW ME ♡</span>
+
+        <h2>About Me</h2>
+
+        <p class="about-intro">
+            Hey, I'm Paresh Majhi 👋
+        </p>
+
+        <p>
+            I'm a passionate web development learner who loves creating
+            beautiful websites and exploring new technologies.
+            Ishq-Beats is a special project designed with love, music,
+            and beautiful memories in mind.
+        </p>
+
+        <p>
+            I believe that music connects hearts and makes every moment
+            unforgettable. This little corner combines my creativity,
+            love for design, and passion for development.
+        </p>
+
+        <div class="about-signature">
+            Designed with <i class="fa-solid fa-heart"></i> by Paresh
+        </div>
+    </div>
+
+    <div class="about-contact">
+        <h3>Let's Connect <span>♡</span></h3>
+
+        <a href="mailto:opparesh132@gmail.com" class="contact-link">
+            <i class="fa-solid fa-envelope"></i>
+            <span>opparesh132@gmail.com</span>
+        </a>
+
+        <a href="https://www.instagram.com/p_a_r_e_s_h_19"
+           target="_blank" rel="noopener noreferrer" class="contact-link">
+            <i class="fa-brands fa-instagram"></i>
+            <span>@p_a_r_e_s_h_19</span>
+        </a>
+
+        <a href="https://x.com/devparesh09"
+           target="_blank" rel="noopener noreferrer" class="contact-link">
+            <i class="fa-brands fa-x-twitter"></i>
+            <span>@devparesh09</span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/paresh-majhi-2ab362332"
+           target="_blank" rel="noopener noreferrer" class="contact-link">
+            <i class="fa-brands fa-linkedin"></i>
+            <span>Paresh Majhi</span>
+        </a>
+
+        <a href="https://www.facebook.com/devparesh09"
+           target="_blank" rel="noopener noreferrer" class="contact-link">
+            <i class="fa-brands fa-facebook"></i>
+            <span>devparesh09</span>
+        </a>
+
+        <div class="developer-badge">
+            <i class="fa-solid fa-code"></i>
+            <span>Web Developer in Progress</span>
+        </div>
+    </div>
+</section>
+
+<script src="love.js"></script>
+</body>
+</html>
